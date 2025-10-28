@@ -20,7 +20,9 @@ Trong điện toán, một mạng lưới có thể được hình thành từ 2
 
 Mạng lưới được tích hợp vào cuộc sống hàng ngày của chúng ta. Dù là thu thập dữ liệu thời tiết, cung cấp điện cho hộ gia đình hay thậm chí xác định ai được quyền ưu tiên trên đường. Vì mạng lưới đã ăn sâu vào đời sống hiện đại, nên nó là một khái niệm thiết yếu cần nắm vững trong an ninh mạng.
 
-!\[1 Example](images/1.jpg)
+
+
+!\[1 Example](Networking/Network Fundamentals/images/1.jpg)
 
 
 
@@ -32,7 +34,7 @@ Internet là một mạng lưới khổng lồ bao gồm rất nhiều mạng l�
 
 Phiên bản đầu tiên của Internet nằm trong dự án ARPANET vào cuối những năm 1960. Dự án này được Bộ Quốc phòng Hoa Kỳ tài trợ và là mạng lưới đầu tiên được ghi nhận đang hoạt động. Tuy nhiên, phải đến năm 1989, Internet như chúng ta biết mới được Tim Berners-Lee phát minh ra với sự ra đời của World Wide Web ( WWW ) . Mãi đến thời điểm này, Internet mới bắt đầu được sử dụng như một kho lưu trữ và chia sẻ thông tin, giống như ngày nay.
 
-!\[2 Example](images/2.png)
+!\[2 Example](Networking/Network Fundamentals/images/2.png)
 
 Như đã đề cập trước đó, Internet được tạo thành từ nhiều mạng nhỏ kết nối với nhau. Những mạng nhỏ này được gọi là mạng riêng, trong khi các mạng kết nối những mạng nhỏ này được gọi là mạng công cộng -- hay Internet!  Tóm lại, một mạng có thể thuộc một trong hai loại sau:
 
@@ -63,9 +65,9 @@ Giờ đây, chúng ta có thể thay đổi tên thông qua việc đăng ký c
 
 #### **Địa chỉ IP**
 
-Tóm lại, địa chỉ IP (hay Giao thức Internet ) có thể được sử dụng như một cách để xác định một máy chủ trên mạng trong một khoảng thời gian nhất định, sau đó địa chỉ IP đó có thể được liên kết với một thiết bị khác mà không cần thay đổi địa chỉ IP. 
+Tóm lại, địa chỉ IP (hay Giao thức Internet ) có thể được sử dụng như một cách để xác định một máy chủ trên mạng trong một khoảng thời gian nhất định, sau đó địa chỉ IP đó có thể được liên kết với một thiết bị khác mà không cần thay đổi địa chỉ IP.
 
-!\[3 Example](images/3.png)
+!\[3 Example](Networking/Network Fundamentals/images/3.png)
 
 
 
@@ -77,13 +79,13 @@ Tóm lại, địa chỉ IP (hay Giao thức Internet ) có thể được sử 
 
 
 
-Địa chỉ công khai được sử dụng để nhận dạng thiết bị trên Internet, trong khi địa chỉ riêng tư được sử dụng để nhận dạng một thiết bị trong số các thiết bị khác. 
+Địa chỉ công khai được sử dụng để nhận dạng thiết bị trên Internet, trong khi địa chỉ riêng tư được sử dụng để nhận dạng một thiết bị trong số các thiết bị khác.
 
-!\[4 Example](images/4.png)
+!\[4 Example](Networking/Network Fundamentals/images/4.png)
 
 Hai thiết bị này sẽ có thể sử dụng địa chỉ IP riêng để giao tiếp với nhau. Tuy nhiên, bất kỳ dữ liệu nào được gửi lên Internet từ một trong hai thiết bị này sẽ được xác định bằng cùng một địa chỉ IP công cộng. Địa chỉ IP công cộng được cung cấp bởi Nhà cung cấp dịch vụ Internet (hoặc ISP) của bạn với một khoản phí hàng tháng.
 
-!\[5 Example](images/5.png)
+!\[5 Example](Networking/Network Fundamentals/images/5.png)
 
 
 
@@ -96,7 +98,7 @@ IPv6 là một phiên bản mới của giao thức định địa chỉ Interne
 * Hỗ trợ tới 2^128 địa chỉ IP (hơn 340 nghìn tỷ), giải quyết các vấn đề gặp phải với IPv4
 * Hiệu quả hơn nhờ phương pháp mới
 
-!\[6 Example](images/6.png)
+!\[6 Example](Networking/Network Fundamentals/images/6.png)
 
 
 
@@ -121,6 +123,4 @@ Ping là một trong những công cụ mạng cơ bản nhất hiện có. Ping
 
 
 Thời gian các gói tin ICMP di chuyển giữa các thiết bị được đo bằng lệnh ping. Việc đo lường này được thực hiện bằng cách sử dụng gói tin phản hồi ICMP và sau đó là phản hồi ICMP từ thiết bị đích.
-
-
 
