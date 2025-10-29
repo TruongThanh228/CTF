@@ -2,11 +2,11 @@
 
 #### **I, Giới thiệu về cơ sở dữ liệu(Introducing Databases)**
 
-Được rồi, vậy là bạn đã được nghe về tầm quan trọng của chúng. Giờ là lúc để hiểu chúng là gì ngay từ đầu. Như đã đề cập trong phần giới thiệu, cơ sở dữ liệu rất phổ biến đến mức bạn rất có thể sẽ tương tác với các hệ thống đang sử dụng chúng. Cơ sở dữ liệu là một tập hợp thông tin hoặc dữ liệu có cấu trúc được tổ chức, dễ dàng truy cập và có thể được thao tác hoặc phân tích. Dữ liệu đó có thể tồn tại dưới nhiều hình thức, chẳng hạn như dữ liệu xác thực người dùng (như tên người dùng và mật khẩu), được lưu trữ và kiểm tra khi xác thực vào một ứng dụng hoặc trang web (ví dụ như TryHackMe), dữ liệu do người dùng tạo trên mạng xã hội (như Instagram và Facebook) nơi dữ liệu như bài đăng, bình luận, lượt thích của người dùng, v.v. được thu thập và lưu trữ, cũng như thông tin như lịch sử xem được lưu trữ bởi các dịch vụ phát trực tuyến như Netflix và được sử dụng để tạo đề xuất.
+Cơ sở dữ liệu là một tập hợp thông tin hoặc dữ liệu có cấu trúc được tổ chức, dễ dàng truy cập và có thể được thao tác hoặc phân tích. Dữ liệu đó có thể tồn tại dưới nhiều hình thức, chẳng hạn như dữ liệu xác thực người dùng (như tên người dùng và mật khẩu), được lưu trữ và kiểm tra khi xác thực vào một ứng dụng hoặc trang web (ví dụ như TryHackMe), dữ liệu do người dùng tạo trên mạng xã hội (như Instagram và Facebook) nơi dữ liệu như bài đăng, bình luận, lượt thích của người dùng, v.v. được thu thập và lưu trữ, cũng như thông tin như lịch sử xem được lưu trữ bởi các dịch vụ phát trực tuyến như Netflix và được sử dụng để tạo đề xuất.
 
 
 
-Tôi chắc bạn đã hiểu ý tôi: cơ sở dữ liệu được sử dụng rộng rãi và có thể chứa nhiều nội dung khác nhau. Không chỉ các doanh nghiệp quy mô lớn mới sử dụng cơ sở dữ liệu. Các doanh nghiệp quy mô nhỏ hơn, khi thành lập, gần như chắc chắn sẽ phải cấu hình cơ sở dữ liệu để lưu trữ dữ liệu. Nói về các loại cơ sở dữ liệu, hãy cùng xem xét chúng là gì.
+Cơ sở dữ liệu được sử dụng rộng rãi và có thể chứa nhiều nội dung khác nhau. Không chỉ các doanh nghiệp quy mô lớn mới sử dụng cơ sở dữ liệu. Các doanh nghiệp quy mô nhỏ hơn, khi thành lập, gần như chắc chắn sẽ phải cấu hình cơ sở dữ liệu để lưu trữ dữ liệu. Nói về các loại cơ sở dữ liệu, hãy cùng xem xét chúng là gì.
 
 
 #### **II, Các loại cơ sở dữ liệu khác nhau(Different Types of Databases)**
@@ -58,9 +58,9 @@ Sau khi một bảng đã được định nghĩa và điền đầy đủ dữ 
 
 ![](./images/0_64EBtbzyAOFnQPep.webp)
 
-#### **SQL**
+# **III, SQL**
 
-###### **SQL là gì ?**
+#### **SQL là gì ?**
 
 Về mặt lý thuyết, tất cả những điều này nghe có vẻ tuyệt vời, nhưng trên thực tế, cơ sở dữ liệu hoạt động như thế nào? Bạn sẽ tạo bảng đầu tiên và điền dữ liệu vào đó như thế nào? Bạn sẽ sử dụng cái gì? Cơ sở dữ liệu thường được điều khiển bằng Hệ thống Quản lý Cơ sở dữ liệu (DBMS). Đóng vai trò là giao diện giữa người dùng cuối và cơ sở dữ liệu, DBMS là một chương trình phần mềm cho phép người dùng truy xuất, cập nhật và quản lý dữ liệu đang được lưu trữ. Một số ví dụ về DBMS bao gồm MySQL, MongoDB, Oracle Database và Maria DB.
 
@@ -70,7 +70,7 @@ Tương tác giữa người dùng cuối và cơ sở dữ liệu có thể đ�
 
 
 
-###### **Lợi ích của SQL và cơ sở dữ liệu quan hệ**
+#### **Lợi ích của SQL và cơ sở dữ liệu quan hệ**
 
 SQL gần như phổ biến như chính cơ sở dữ liệu, và điều này hoàn toàn có lý do. Dưới đây là một số lợi ích khi học và sử dụng SQL :
 
@@ -115,25 +115,25 @@ Trong danh sách trả về, bạn sẽ thấy cơ sở dữ liệu vừa tạo 
 
 Sau khi tạo cơ sở dữ liệu, bạn có thể muốn tương tác với nó. Trước khi có thể tương tác, chúng ta cần cho mysql biết chúng ta muốn tương tác với cơ sở dữ liệu nào (để mysql biết cần chạy các truy vấn tiếp theo với cơ sở dữ liệu nào). Để thiết lập cơ sở dữ liệu vừa tạo làm cơ sở dữ liệu đang hoạt động, chúng ta sẽ chạy **USE** câu lệnh như sau (hãy đảm bảo chạy câu lệnh này trên máy của bạn):
 
-<pre>mysql> USE thm\_bookmarket\_db;</pre>
+<pre>mysql> USE DATABASES;</pre>
 
 
 
-* ###### **XÓA CƠ SỞ DỮ LIỆU**
+* **XÓA CƠ SỞ DỮ LIỆU**
 
 Khi một cơ sở dữ liệu không còn cần thiết nữa (có thể nó được tạo ra cho mục đích thử nghiệm, hoặc không còn cần thiết nữa), bạn có thể xóa nó bằng **DROP** câu lệnh. Để xóa cơ sở dữ liệu, chúng ta sẽ sử dụng cú pháp câu lệnh sau (mặc dù trong trường hợp này, chúng ta muốn giữ lại cơ sở dữ liệu, vì vậy không cần phải tự chạy câu lệnh này!):
 
-<pre>mysql> DROP database database\_name;</pre>
+<pre>mysql> DROP database database_name;</pre>
 
 
 
-* ###### **Câu lệnh bảng**
+* **CÂU LỆNH BẢNG**
 
 **Tạo bảng :**
 
 Theo logic của các câu lệnh cơ sở dữ liệu, việc tạo bảng cũng sử dụng một câu lệnh **CREATE**. Khi cơ sở dữ liệu đã hoạt động (bạn đã chạy USE câu lệnh trên đó), một bảng có thể được tạo bên trong cơ sở dữ liệu đó bằng cú pháp câu lệnh sau:
 
-<pre>mysql> CREATE TABLE example\_table\_name (
+<pre>mysql> CREATE TABLE table_name (
     column1 datatype [constraint],
     column2 datatype [constraint],
     column3 datatype [constraint],
@@ -151,7 +151,7 @@ Cũng như chúng ta có thể liệt kê các cơ sở dữ liệu bằng câu 
 
 Nếu chúng ta muốn biết những cột nào có trong một bảng (và kiểu dữ liệu của chúng), chúng ta có thể mô tả chúng bằng lệnh **DESCRIBE** (cũng có thể viết tắt là DESC). Hãy mô tả bảng bạn vừa tạo bằng lệnh sau:
 
-<pre>mysql> DESCRIBE TABLES;</pre>
+<pre>mysql> DESCRIBE TABLE;</pre>
 
 
 
@@ -159,7 +159,7 @@ Nếu chúng ta muốn biết những cột nào có trong một bảng (và ki�
 
 Sau khi tạo bảng, có thể sẽ đến lúc nhu cầu về tập dữ liệu của bạn thay đổi và bạn cần chỉnh sửa bảng. Việc này có thể được thực hiện bằng cách sử dụng **ALTER** câu lệnh. Bây giờ, hãy tưởng tượng rằng chúng ta thực sự muốn có một cột trong kho sách chứa số trang của mỗi cuốn sách. Thêm cột này vào bảng bằng câu lệnh sau:
 
-<pre>mysql> ALTER TABLE table\_name
+<pre>mysql> ALTER TABLE table_name
     ADD page_count INT;</pre>
 
 Câu lệnh này **ALTER** có thể được sử dụng để thực hiện các thay đổi trong bảng, chẳng hạn như đổi tên cột, thay đổi kiểu dữ liệu trong cột hoặc xóa cột.
@@ -190,7 +190,7 @@ Hãy cùng khám phá tất cả các thao tác khác nhau này khi làm việc 
 
 Thao tác Create sẽ tạo các bản ghi mới trong một bảng. Trong MySQL, thao tác này có thể được thực hiện bằng cách sử dụng câu lệnh **INSERT INTO**, như minh họa bên dưới.
 
-<pre>mysql> INSERT INTO tables_name (id, name, published_date, description)</pre>
+<pre>mysql> INSERT INTO table_name (id, name, published_date, description)</pre>
 
 
 Như chúng ta có thể thấy, INSERT INTO câu lệnh này chỉ định một bảng, nơi bạn có thể thêm một bản ghi mới; các cột id , name , published_date và description là các bản ghi trong bảng.
@@ -199,7 +199,7 @@ Như chúng ta có thể thấy, INSERT INTO câu lệnh này chỉ định mộ
 
 Thao tác Đọc , đúng như tên gọi, được sử dụng để đọc hoặc lấy thông tin từ một bảng. Chúng ta có thể lấy một cột hoặc tất cả các cột từ một bảng bằng câu lệnh **SELECT**
 
-<pre>mysql> SELECT * FROM tables_name;</pre>
+<pre>mysql> SELECT * FROM table_name;</pre>
 
 Câu lệnh đầu ra ở trên **SELECT** được theo sau bởi một **\*** ký hiệu cho biết tất cả các cột sẽ được truy xuất, theo sau là **FROM** mệnh đề và tên bảng.
 
@@ -241,7 +241,7 @@ Mệnh đề này **DISTINCT** được sử dụng để tránh các bản ghi 
 
 Mệnh đề này **GROUP BY** tổng hợp dữ liệu từ nhiều bản ghi và nhóm kết quả truy vấn thành các cột. Điều này có thể hữu ích cho việc tổng hợp các hàm.
 
-<pre>SELECT cot_1, cot_2, [hàm_tổng_hợp(cot_3)]
+<pre>mysql> SELECT cot_1, cot_2, [hàm_tổng_hợp(cot_3)]
 FROM ten_bang
 WHERE dieu_kien
 GROUP BY cot_1, cot_2
@@ -249,16 +249,16 @@ GROUP BY cot_1, cot_2
 [ORDER BY cot_1];</pre>
 
 VD : Nhóm các sinh viên theo Lop, sau đó đếm số lượng sinh viên trong mỗi lớp.
-<pre>SELECT Lop, COUNT(MaSV) AS SoLuongSV
+<pre>mysql> SELECT Lop, COUNT(MaSV) AS SoLuongSV
 FROM SinhVien
 GROUP BY Lop;</pre>
 
 
-* ###### **Mệnh đề ORDER BY**
+* **Mệnh đề ORDER BY**
 
 Mệnh đề này **ORDER BY** có thể được sử dụng để sắp xếp các bản ghi được trả về bởi một truy vấn theo thứ tự tăng dần hoặc giảm dần. Việc sử dụng các hàm như **ASC** và **DESC** có thể giúp chúng ta thực hiện điều đó.
 
-<pre>SELECT cot_1, cot_2, ...
+<pre>mysql> SELECT cot_1, cot_2, ...
 FROM ten_bang
 [WHERE dieu_kien]
 [GROUP BY cot_nhom]
@@ -272,7 +272,7 @@ Chúng ta có thể quan sát sự khác biệt khi sắp xếp theo thứ tự 
 
 Mệnh đề này **HAVING** được sử dụng cùng với các mệnh đề khác để lọc nhóm hoặc kết quả của các bản ghi dựa trên một điều kiện. Trong trường hợp **GROUP BY**, nó đánh giá điều kiện thành **TRUE** hoặc **FALSE**, không giống như **WHERE** mệnh đề **HAVING** lọc kết quả sau khi quá trình tổng hợp được thực hiện.
 
-<pre>SELECT cot_1, ham_tong_hop(cot_2)
+<pre>mysql> SELECT cot_1, ham_tong_hop(cot_2)
 FROM ten_bang
 WHERE dieu_kien_hang
 GROUP BY cot_1
@@ -280,12 +280,12 @@ HAVING dieu_kien_nhom
 ORDER BY cot_1;</pre>
 
 VD : Tính điểm trung bình của từng lớp,rồi chỉ hiển thị các lớp có điểm trung bình ≥ 7.
-<pre>SELECT Lop, AVG(DiemTB) AS DiemTrungBinh
+<pre>mysql> SELECT Lop, AVG(DiemTB) AS DiemTrungBinh
 FROM SinhVien
 GROUP BY Lop
 HAVING AVG(DiemTB) >= 7;</pre>
 
-#### **Người vận hành(Operaters)**
+#### **Operaters**
 
 * **Toán tử logic**
 
@@ -297,59 +297,69 @@ Các toán tử này kiểm tra tính đúng đắn của một điều kiện v
 
 Toán tử này **LIKE** thường được sử dụng kết hợp với các mệnh đề như " WHERE to filter" để lọc các mẫu cụ thể trong một cột. Hãy tiếp tục sử dụng **DataBase** của chúng ta để truy vấn một ví dụ về cách sử dụng của nó.
 
-<pre>SELECT cot_1, cot_2, ...
+<pre>mysql> SELECT cot_1, cot_2, ...
 FROM ten_bang
 WHERE cot LIKE 'mẫu_tìm_kiếm';</pre>
 
 VD : Tìm tất cả sinh viên có họ bắt đầu bằng “Nguyen”
-<pre>SELECT * FROM SinhVien
+<pre>mysql> SELECT * FROM SinhVien
 WHERE HoTen LIKE 'Nguyen%';</pre>
 
 
-#### **Chức năng(Functions)**
+#### **Functions**
 
 * **Hàm CONCAT()**
 
 Hàm này được sử dụng để cộng hai hoặc nhiều chuỗi lại với nhau. Hàm này hữu ích để kết hợp văn bản từ các cột khác nhau.
 
-
+<pre>mysql> SELECT CONCAT(chuoi1, chuoi2, ...); </pre>
 
 * **Hàm GROUP_CONCAT()**
 
 Hàm này có thể giúp chúng ta nối dữ liệu từ nhiều hàng vào một trường. Hãy cùng khám phá một ví dụ về cách sử dụng hàm này.
 
-
+<pre>mysql> SELECT GROUP_CONCAT(col SEPARATOR 'ngăn_cách')
+FROM ten_bang
+GROUP BY cot_nhom;</pre>
 
 * **Hàm SUBSTRING()**
 
 Hàm này sẽ lấy một chuỗi con từ một chuỗi trong truy vấn, bắt đầu từ một vị trí xác định. Độ dài của chuỗi con này cũng có thể được chỉ định.
 
-
+<pre>mysql> SELECT SUBSTRING(chuoi, vi_tri_bat_dau, do_dai);</pre>
 
 * **Hàm LENGTH()**
 
 Hàm này trả về số ký tự trong một chuỗi. Số ký tự này bao gồm cả khoảng trắng và dấu câu. Chúng ta có thể xem ví dụ bên dưới.
 
-
+<pre>mysql> SELECT LENGTH(chuoi);</pre>
 
 * **Hàm COUNT()**
 
 Hàm này trả về số lượng bản ghi trong một biểu thức.
 
+<pre>mysql> SELECT COUNT(cot)
+FROM ten_bang
+[WHERE dieu_kien];</pre>
 
 
 * **Hàm SUM()**
 
 Hàm này tính tổng tất cả các giá trị (không phải NULL) của một cột xác định.
 
-
+<pre>mysql> SELECT SUM(cot)
+FROM ten_bang;</pre>
 
 * **Hàm MAX()**
 
 Hàm này tính giá trị lớn nhất trong một cột được cung cấp trong một biểu thức.
 
-
+<pre>mysql> SELECT MAX(cot)
+FROM ten_bang;</pre>
 
 * **Hàm MIN()**
 
 Hàm này tính giá trị nhỏ nhất trong một cột được cung cấp trong một biểu thức.
+
+<pre>mysql> SELECT MIN(tên_cột)
+FROM tên_bảng;</pre>
