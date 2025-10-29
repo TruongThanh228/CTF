@@ -11,6 +11,8 @@ Tầng ứng dụng của mô hình OSI là tầng mà bạn sẽ quen thuộc n
 
 Các ứng dụng hàng ngày như máy khách email, trình duyệt hoặc phần mềm duyệt máy chủ tệp như FileZilla cung cấp giao diện người dùng đồ họa (GUI) thân thiện  để người dùng  tương tác với dữ  liệu được gửi hoặc nhận  . Các giao thức khác bao gồm  DNS  ( Hệ thống tên miền  ), là cách địa chỉ trang web được chuyển đổi thành địa chỉ IP.
 
+Protocols and Standards : HTTP, FTP, DNS, POP3, SMTP, IMAP
+
 # **III, Layer 6 - Presentation**
 Tầng 6 của mô hình OSI là tầng mà quá trình chuẩn hóa bắt đầu diễn ra. Vì các nhà phát triển phần mềm có thể phát triển bất kỳ phần mềm nào, chẳng hạn như ứng dụng email, theo những cách khác nhau, nên dữ liệu vẫn cần được xử lý theo cùng một cách — bất kể phần mềm hoạt động như thế nào.
 
@@ -18,12 +20,16 @@ Lớp này hoạt động như một trình biên dịch dữ liệu đến và 
 
 Các tính năng bảo mật như mã hóa dữ liệu (như HTTPS khi truy cập trang web an toàn) xảy ra ở lớp này.
 
+Protocols and Standards : Unicode, MIME, JPEG, PNG, MPEG
+
 # **IV, Layer 5 - Session**
 Sau khi dữ liệu đã được dịch hoặc định dạng chính xác từ lớp trình bày (lớp 6), lớp phiên (lớp 5) sẽ bắt đầu tạo kết nối đến máy tính khác mà dữ liệu được gửi đến. Khi kết nối được thiết lập, một phiên sẽ được tạo. Khi kết nối này hoạt động, phiên cũng hoạt động.
 
 Lớp phiên (lớp 5) đồng bộ hóa hai máy tính để đảm bảo chúng hoạt động trên cùng một nền tảng trước khi dữ liệu được gửi và nhận. Sau khi các bước kiểm tra này được thực hiện, lớp phiên sẽ bắt đầu chia dữ liệu được gửi thành các khối dữ liệu nhỏ hơn và bắt đầu gửi từng khối (gói) dữ liệu này. Việc chia nhỏ này rất có lợi vì nếu kết nối bị mất, chỉ những khối dữ liệu chưa được gửi mới phải được gửi lại — chứ không phải toàn bộ dữ liệu (giống như việc tải tệp lưu trong trò chơi điện tử).
 
 Điều đáng chú ý là các phiên là duy nhất — nghĩa là dữ liệu không thể di chuyển qua các phiên khác nhau mà chỉ có thể di chuyển qua từng phiên.
+
+Protocols and Standards : NFS, RPC
 
 # **V, Layer 4 - Transport**
 Tầng 4 của mô hình OSI đóng vai trò quan trọng trong việc truyền dữ liệu qua mạng và có thể hơi khó hiểu. Khi dữ liệu được gửi giữa các thiết bị, nó tuân theo một trong hai giao thức khác nhau được quyết định dựa trên một số yếu tố:
@@ -45,6 +51,8 @@ Mặc dù điều này nghe có vẻ bất lợi, nhưng nó cũng có những �
 
 UDP hữu ích trong các trường hợp dữ liệu được gửi đi chỉ là những phần nhỏ. Ví dụ, các giao thức được sử dụng để phát hiện thiết bị ( ARP  và  DHCP  mà chúng ta đã thảo luận trong  Phòng 2 – Giới thiệu về mạng LAN)  hoặc các tệp lớn hơn như phát trực tuyến video (trong đó một phần video bị vỡ hạt cũng không sao. Điểm ảnh chỉ là những phần dữ liệu bị mất!)
 
+Protocols and Standards : 	UDP, TCP
+
 # **VI, Layer 3 - Network**
 Tầng thứ ba của mô hình OSI (tầng mạng) là nơi diễn ra quá trình định tuyến và tái lắp ráp dữ liệu (từ những khối dữ liệu nhỏ này đến khối dữ liệu lớn hơn). Trước hết, định tuyến chỉ đơn giản là xác định đường dẫn tối ưu nhất để các khối dữ liệu này được gửi đi.
 
@@ -55,6 +63,8 @@ Trong khi một số giao thức ở tầng này xác định chính xác đư�
 Đường dẫn nào có kết nối vật lý nhanh hơn? Ví dụ: một đường dẫn sử dụng kết nối đồng (chậm hơn) hay cáp quang (nhanh hơn đáng kể)?
 Ở lớp này, mọi thứ được xử lý thông qua địa chỉ IP, chẳng hạn như 192.168.1.100. Các thiết bị như bộ định tuyến có khả năng phân phối gói tin bằng địa chỉ IP được gọi là thiết bị Lớp 3 — vì chúng có khả năng hoạt động ở lớp thứ ba của mô hình OSI.
 
+Protocols and Standards : IP, ICMP, IPSec
+
 # **VII, Layer 2 - Data Link**
 Lớp liên kết dữ liệu tập trung vào việc định địa chỉ vật lý cho quá trình truyền tải. Nó nhận một gói tin từ lớp mạng (bao gồm địa chỉ IP của máy tính từ xa) và thêm địa chỉ  MAC  (Media Access Control - Kiểm soát Truy cập Phương tiện) vật lý của điểm cuối nhận. Bên trong mỗi máy tính được kết nối mạng đều có một  Card Giao diện Mạng ( NIC  ) đi kèm với một địa chỉ MAC duy nhất để nhận dạng.
 
@@ -62,5 +72,9 @@ Lớp liên kết dữ liệu tập trung vào việc định địa chỉ vật
 
 Ngoài ra, lớp liên kết dữ liệu còn có nhiệm vụ trình bày dữ liệu theo định dạng phù hợp để truyền tải.
 
+Protocols and Standards : Ethernet (802.3), WiFi (802.11)
+
 # **VIII, Layer 1 - Physical**
 Tầng này là một trong những tầng dễ hiểu nhất. Nói một cách đơn giản, tầng này tham chiếu đến các thành phần vật lý của phần cứng được sử dụng trong mạng và là tầng thấp nhất mà bạn sẽ tìm thấy. Các thiết bị sử dụng tín hiệu điện để truyền dữ liệu giữa các thiết bị với nhau theo hệ nhị phân (1 và 0).
+
+Protocols and Standards : lectrical, optical, and wireless signals
